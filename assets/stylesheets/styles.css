@@ -53,6 +53,19 @@ table {
   border-spacing: 0;
 }
 
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
 /*
   ========================================
   Custom styles
@@ -60,8 +73,74 @@ table {
 */
 
 body {
-	 font-family: 'PT Sans' sans-serif;
-	 font-size: 14px;
-	 line-height: 22px;
+	font-family: 'PT Sans' sans-serif;
+	font-size: 14px;
+	background: #293f50;
+	color: #888;
 }
+
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/*
+  ========================================
+  Primary header
+  ========================================
+*/
+
+header {
+	font-size: 30px;
+}
+
+.logo {
+  border-top: 4px solid #648880;
+  float: left;
+  padding: 40px 0 22px 0;
+  text-transform: uppercase;
+}
+
+.tagline {
+	margin: 66px 0 22px 0;
+  	text-align: right;
+}
+
+/*
+  ========================================
+  Links
+  ========================================
+*/
+
+a {
+  color: #648880;
+  text-decoration: none;
+}
+a:hover {
+  color: #a9b2b9;
+}
+
+/*
+  ========================================
+  Navigation
+  ========================================
+*/
+
+.nav {
+  text-align: center;
+  background: #F2F8FD;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: 30px;
+}
+.nav li {
+  display: inline-block;
+  margin: 0 10px;
+  vertical-align: top;
+}
+.nav li:last-child {
+  margin-right: 0;
+}
+
+
 
