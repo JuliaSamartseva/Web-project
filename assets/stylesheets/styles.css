@@ -78,10 +78,19 @@ body {
 	background: #293f50;
 	color: #888;
 }
-
 .container {
-  padding-left: 30px;
-  padding-right: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.container-body {
+	width: 980px;
+	margin: auto;
+}
+.current-item {
+	text-decoration: underline;
+}
+.current-bold {
+	font-weight: 800;
 }
 
 /*
@@ -93,14 +102,12 @@ body {
 header {
 	font-size: 30px;
 }
-
 .logo {
-  border-top: 4px solid #648880;
-  float: left;
-  padding: 40px 0 22px 0;
-  text-transform: uppercase;
+	border-top: 4px solid #648880;
+	float: left;
+	padding: 40px 0 22px 0;
+	text-transform: uppercase;
 }
-
 .tagline {
 	margin: 66px 0 22px 0;
   	text-align: right;
@@ -113,11 +120,11 @@ header {
 */
 
 a {
-  color: #648880;
-  text-decoration: none;
+	color: #648880;
+	text-decoration: none;
 }
 a:hover {
-  color: #a9b2b9;
+	color: #a9b2b9;
 }
 
 /*
@@ -127,19 +134,52 @@ a:hover {
 */
 
 .nav {
-  text-align: center;
-  background: #F2F8FD;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  font-size: 30px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	min-width: 980px;
+}
+.nav-main {
+	text-align: center;
+	background: #F2F8FD;
+	font-size: 30px;
+}
+.nav-item {
+	text-decoration: underline;
 }
 .nav li {
-  display: inline-block;
-  margin: 0 10px;
-  vertical-align: top;
+	display: inline-block;
+	margin: 0 10px;
+	vertical-align: top;
 }
 .nav li:last-child {
-  margin-right: 0;
+	margin-right: 0;
+}
+.nav-item::after {
+	position: absolute;
+	margin-left: 5px;
+	content: "/";
+	text-decoration: none;
+}
+.bullet-list{
+	list-style-type: disc;
+}
+.bullet-list li{
+	margin-left:15px;
+}
+
+
+/*
+  ========================================
+  Slider
+  ========================================
+*/
+
+.slider {
+	position: relative;
+	overflow: hidden;
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 
