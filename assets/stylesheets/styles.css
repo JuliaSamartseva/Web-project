@@ -73,17 +73,20 @@ table {
 */
 
 body {
-	font-family: 'PT Sans' sans-serif;
+	font-family: "PT Sans", sans-serif;
 	font-size: 14px;
 	background: #293f50;
-	color: #888;
+	color: white;
+	text:white;
+	height: 100%
 }
 .container {
-	padding-left: 10px;
-	padding-right: 10px;
+	padding: 10px;
+	width: 1000px;
+	margin:auto;
 }
 .container-body {
-	width: 980px;
+	min-width: 1000px;
 	margin: auto;
 }
 .current-item {
@@ -103,14 +106,17 @@ header {
 	font-size: 30px;
 }
 .logo {
-	border-top: 4px solid #648880;
 	float: left;
-	padding: 40px 0 22px 0;
-	text-transform: uppercase;
+	padding: 15px 0 22px 0;
+	height: 180px;
 }
 .tagline {
-	margin: 66px 0 22px 0;
+	margin: 66px 0 66px 0;
   	text-align: right;
+  	font-size:40px;
+}
+.number {
+	font-family: "Open Sans Condensed", sans-serif;
 }
 
 /*
@@ -120,11 +126,15 @@ header {
 */
 
 a {
-	color: #648880;
+	color: white;
 	text-decoration: none;
 }
 a:hover {
 	color: #a9b2b9;
+}
+.contact {
+	border-bottom: 2px dashed white;
+	font-weight: 700;
 }
 
 /*
@@ -142,6 +152,20 @@ a:hover {
 	text-align: center;
 	background: #F2F8FD;
 	font-size: 30px;
+	padding: 20px;
+}
+.nav-main a {
+	color:#648880;
+	margin-right: 10px;
+}
+.nav-main a::after {
+	position: absolute;
+	margin-left: 10px;
+	content: "|";
+	text-decoration: none;
+}
+.nav-main a:hover {
+	text-decoration: underline;
 }
 .nav-item {
 	text-decoration: underline;
@@ -160,11 +184,17 @@ a:hover {
 	content: "/";
 	text-decoration: none;
 }
-.bullet-list{
+.bullet-list {
 	list-style-type: disc;
 }
-.bullet-list li{
+.bullet-list li {
 	margin-left:15px;
+}
+.main-menu {
+	font-size:18px;
+}
+.menu {
+	line-height: 22px;
 }
 
 
@@ -177,7 +207,6 @@ a:hover {
 .slider {
 	position: relative;
 	overflow: hidden;
-	max-width: 600px;
 	margin-left: auto;
 	margin-right: auto;
 }
