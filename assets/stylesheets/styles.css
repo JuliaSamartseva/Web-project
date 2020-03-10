@@ -94,6 +94,10 @@ body {
 .current-bold {
 	font-weight: 800;
 }
+p {
+	line-height: 22px;
+}
+
 
 /*
   ========================================
@@ -103,6 +107,10 @@ body {
 
 header {
 	font-size: 30px;
+	background: #293f50;
+	background: -webkit-linear-gradient(to right bottom, #648DAB, #1F425B);
+	background:    -moz-linear-gradient(to right bottom, #648DAB, #1F425B);
+	background:         linear-gradient(to right bottom, #648DAB, #1F425B);
 }
 .logo {
 	float: left;
@@ -126,7 +134,16 @@ header {
   ========================================
 */
 
-
+footer {
+	background: #F2F8FD;
+	position: relative;
+	height: 200px;
+	color:#648880;
+}
+footer a {
+	color:#648880;
+	text-decoration: underline;
+}
 
 /*
   ========================================
@@ -215,6 +232,11 @@ a:hover {
 	font-size:18px;
 }
 .menu {
+	line-height: 22px;
+}
+.footer-menu a {
+	text-decoration: underline;
+	color:#648880;
 	line-height: 22px;
 }
 
