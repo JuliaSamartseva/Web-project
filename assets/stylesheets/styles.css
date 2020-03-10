@@ -82,7 +82,7 @@ body {
 .container {
 	padding: 10px;
 	width: 1000px;
-	margin:auto;
+	margin: 0 auto;
 }
 .container-body {
 	min-width: 1000px;
@@ -108,6 +108,8 @@ header {
 	float: left;
 	padding: 15px 0 22px 0;
 	height: 180px;
+	width: 414px;
+
 }
 .tagline {
 	margin: 66px 0 66px 0;
@@ -117,6 +119,14 @@ header {
 .number {
 	font-family: "open_sans_condensedlight", sans-serif;
 }
+
+/*
+  ========================================
+  Primary footer
+  ========================================
+*/
+
+
 
 /*
   ========================================
@@ -223,26 +233,12 @@ a:hover {
 
 /*
   ========================================
-  Fonts
+  Price list
   ========================================
-*/
-
-@font-face {
-    font-family: "open_sans_condensedlight";
-    src: url('../fonts/opensanscondensed-light-webfont.woff2') format('woff2'),
-         url('../fonts/opensanscondensed-light-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-/*
-don't know
 */
 
 .price-list {
 	margin-top: 15px;
-	width:100px;
 }
 .price-list figure {
 	margin-top: 50px;
@@ -255,3 +251,56 @@ don't know
 	font-size:18px;
 	font-weight: bold;
 }
+
+/*
+  ========================================
+  Blocks
+  ========================================
+*/
+
+.left-block {
+	width: 20%;
+}
+.center-block {
+	width: 70%;
+	margin: 0 auto;
+}
+.left-block,
+.center-block {
+  display: inline-block;
+  vertical-align: top;
+}
+/*
+  ========================================
+  About company
+  ========================================
+*/
+
+.about-company {
+	margin: 0 auto;
+	border-top: 1px solid white;
+	margin-top: 40px;
+}
+.col {
+	padding-top: 20px;
+  	width: 47%;
+  	display: inline-block;
+  	vertical-align: top;
+  	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/*
+  ========================================
+  Fonts
+  ========================================
+*/
+
+@font-face {
+    font-family: "open_sans_condensedlight";
+    src: url('../fonts/opensanscondensed-light-webfont.woff2') format('woff2'),
+         url('../fonts/opensanscondensed-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
