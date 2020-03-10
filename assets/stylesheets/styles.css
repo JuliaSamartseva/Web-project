@@ -77,7 +77,6 @@ body {
 	font-size: 14px;
 	background: #293f50;
 	color: white;
-	text:white;
 	height: 100%
 }
 .container {
@@ -116,7 +115,7 @@ header {
   	font-size:40px;
 }
 .number {
-	font-family: "Open Sans Condensed", sans-serif;
+	font-family: "open_sans_condensedlight", sans-serif;
 }
 
 /*
@@ -157,30 +156,42 @@ a:hover {
 .nav-main a {
 	color:#648880;
 	margin-right: 10px;
-}
-.nav-main a::after {
-	position: absolute;
 	margin-left: 10px;
+}
+.nav-main a {
+	color:#648880;	
+}
+.nav-main-item::after {
+	position: absolute;
+	margin-left: 8px;
+	color:#648880;
 	content: "|";
 	text-decoration: none;
+}
+.nav-main-item li:last-child {
+	content:none;
 }
 .nav-main a:hover {
 	text-decoration: underline;
 }
-.nav-item {
-	text-decoration: underline;
-}
 .nav li {
 	display: inline-block;
-	margin: 0 10px;
+	margin-right: 10px;
+	margin-left: 10px;
 	vertical-align: top;
+}
+.nav li:first-child {
+	margin-left: 0;
 }
 .nav li:last-child {
 	margin-right: 0;
 }
+.nav-item {
+	text-decoration: underline;
+}
 .nav-item::after {
 	position: absolute;
-	margin-left: 5px;
+	margin-left: 7px;
 	content: "/";
 	text-decoration: none;
 }
@@ -197,7 +208,6 @@ a:hover {
 	line-height: 22px;
 }
 
-
 /*
   ========================================
   Slider
@@ -211,5 +221,37 @@ a:hover {
 	margin-right: auto;
 }
 
+/*
+  ========================================
+  Fonts
+  ========================================
+*/
+
+@font-face {
+    font-family: "open_sans_condensedlight";
+    src: url('../fonts/opensanscondensed-light-webfont.woff2') format('woff2'),
+         url('../fonts/opensanscondensed-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 
+/*
+don't know
+*/
+
+.price-list {
+	margin-top: 15px;
+	width:100px;
+}
+.price-list figure {
+	margin-top: 50px;
+}
+.price-list img {
+	height: 100px;
+}
+.price-list figcaption {
+	margin-top: 5px;
+	font-size:18px;
+	font-weight: bold;
+}
