@@ -81,6 +81,7 @@ body {
 }
 .container {
 	padding: 10px;
+	padding-top: 50px;
 	width: 1000px;
 	margin: 0 auto;
 }
@@ -112,7 +113,7 @@ header {
 	background:    -moz-linear-gradient(to right bottom, #648DAB, #1F425B);
 	background:         linear-gradient(to right bottom, #648DAB, #1F425B);
 }
-.logo {
+.company-logo {
 	float: left;
 	padding: 15px 0 22px 0;
 	height: 180px;
@@ -144,7 +145,12 @@ footer a {
 	color:#648880;
 	text-decoration: underline;
 }
-
+.done-logo {
+	float: left;
+	height:50px;
+	margin-right: 5px;
+	margin-left: 50px;
+}
 /*
   ========================================
   Links
@@ -302,6 +308,9 @@ a:hover {
 .about-company {
 	border-top: 1px solid white;
 	margin-top: 40px;
+}
+.about-company p {
+	margin-top: 20px;
 }
 
 /*
