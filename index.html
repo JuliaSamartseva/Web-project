@@ -21,7 +21,7 @@
 	    	<div class="tagline">
 		    	<h3 class="number">+38 (066) 1864514<br>+38 (068) 1861937</h3>
 		    	<h3>
-		    		<a class="contact" href="index.html">Feedback</a>
+		    		<button class="contact" onclick="openForm()">Feedback</button>
 		    	</h3>
 	    	</div>
 
@@ -142,24 +142,27 @@
 			</p>
 		</div>
 	</div>
+	<div id="form-popup">
+		<div class="feedback-form" id="feedback">
 
-	<div class="feedback-form" id="feedback">
-		<form action="/action_page.php" class="form-container">
+			<form action="/action_page.php" class="form-container">
+				<h2>Feedback form</h2>
+				
+				<p><label for="name">Name</label>
+				<input type="text" placeholder="Enter name" id="name" required></p>
 
-			<p><label for="name">Name</label>
-			<input type="text" placeholder="Enter name" id="name" required></p>
+				<p><label for="phone">Phone</label>
+				<input type="tel" placeholder="Enter phone" id="phone" required></p>
 
-			<p><label for="phone">Phone</label>
-			<input type="tel" placeholder="Enter phone" id="phone" required></p>
+				<p><label for="email">Email</label>
+				<input type="email" placeholder="Enter email" id="email" required></p>
 
-			<p><label for="email">Email</label>
-			<input type="email" placeholder="Enter email" id="email" required></p>
-
-			<p class="formfield"><label for="feedback-text">Your feedback</label>
-            	<textarea id="feedback-text" rows="5"></textarea>
-          	</p>
-			<button type="submit" class="btn">Send</button>
-		</form>
+				<p class="formfield"><label for="feedback-text">Your feedback</label>
+	            	<textarea id="feedback-text" rows="5"></textarea>
+	          	</p>
+				<button type="submit" class="send-form">Send</button>
+			</form>
+		</div>
 	</div>
 
 	</div>
