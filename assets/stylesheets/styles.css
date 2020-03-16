@@ -168,6 +168,7 @@ a:hover {
 	color: white;
 	border-bottom: 2px dashed white;
 	font-weight: 700;
+	cursor: pointer;
 }
 
 /*
@@ -435,14 +436,20 @@ a:hover {
 	padding: 20px;
 	background-color: #F2F8FD;
 	color:#293f50;
+	text-align: center;
 }
 .form-container h2 {
 	font-size:18px;
 	font-weight: bold;
+	margin-bottom: 20px;
+}
+.form-container textarea {
+	resize: none;
 }
 .form-container input[type=text],
 .form-container input[type=tel],
-.form-container input[type=email] {
+.form-container input[type=email],
+.form-container textarea {
 	width: 100%;
 	padding: 10px;
 	margin: 5px 0 22px 0;
@@ -451,18 +458,27 @@ a:hover {
 }
 .form-container input[type=text]:focus,
 .form-container input[type=tel]:focus, 
-.form-container input[type=email]:focus {
+.form-container input[type=email]:focus,
+.form-container textarea:focus {
 	background-color: #ddd;
 	outline: none;
 }
+.form-container input:invalid {
+	border: 1px solid #EE3D48;
+}
 .send-form {
-	color: #fff;
+	background: #D7E1E9;
+	color: #293f50;
+	width: 100px;
+	border-radius: 4px;
 	padding: 12px 20px;
 	border: none;
 	cursor: pointer;
-	width: 100%;
 	margin-bottom:10px;
 	opacity: 0.8;
+}
+.send-form:hover {
+	background: #BEF761;
 }
 
 /*
