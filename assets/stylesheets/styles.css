@@ -140,6 +140,7 @@ footer {
 	position: relative;
 	height: 200px;
 	color:#648880;
+	padding-top: 30px;
 }
 footer a {
 	color: #648880;
@@ -336,7 +337,6 @@ a:hover {
 	to {opacity: 1}
 }
 
-
 /*
   ========================================
   Price list
@@ -384,7 +384,7 @@ a:hover {
 .about-company {
 	border-top: 1px solid white;
 	margin-top: 40px;
-	margin-bottom: 80px;
+	margin-bottom: 100px;
 }
 .about-company p {
 	margin-top: 20px;
@@ -412,6 +412,7 @@ a:hover {
   Form
   ========================================
 */
+
 #form-popup {
 	display: none; 
 	position: fixed; 
@@ -465,6 +466,9 @@ a:hover {
 .form-container input:invalid {
 	border: 1px solid #EE3D48;
 }
+.form-container input:valid {
+	border: 1px solid #B5FBDD;
+}
 .send-form {
 	background: #D7E1E9;
 	color: #293f50;
@@ -491,8 +495,10 @@ a:hover {
 	height:400px;
 	border-radius: 8px;
 	text-align: center;
+	color: #293f50;
+	font-weight: bold;
 }
-.product-item img {
+.product-item figure img {
 	margin-top: 20px;
 	border-radius: 3px;
 	height: 250px;
@@ -502,8 +508,18 @@ a:hover {
 .product-item figcaption {
 	margin-top: 5px;
 	font-size: 18px;
-	font-weight: bold;
-	color: #293f50;
+}
+.product-item p {
+	position: absolute;
+	margin-top: 50px;
+	margin-left: 24px;
+	font-size: 24px;
+}
+.add-to-cart {
+	position: absolute;
+	width: 40px;
+	margin-top: 40px;
+	margin-left: 60px;
 }
 
 /*
