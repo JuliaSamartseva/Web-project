@@ -158,7 +158,7 @@ footer a {
   ========================================
 */
 
-a {
+a{
 	color: white;
 	text-decoration: none;
 }
@@ -520,6 +520,23 @@ a:hover {
 	width: 40px;
 	margin-top: 40px;
 	margin-left: 60px;
+}
+.pages {
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+.page-item {
+	display: inline-block;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.page-item-main {
+	display: inline-block;
+	margin-left: 7px;
+	margin-right: 7px;
+	font-weight: bold;
+	font-size: 18px;
 }
 
 /*
