@@ -1,0 +1,147 @@
+/*
+  ========================================
+  Background
+  ========================================
+*/
+
+.background {
+	background-color: #c0c4e1;
+}
+.top-background {
+	background-color: rgb(100,109,180, .5);
+	position: absolute;
+	width: 960px;
+	height: 200px;
+	-webkit-transform: skewY(-1.5deg);
+	    -ms-transform: skewY(-1.5deg);
+	        transform: skewY(-1.5deg);
+	margin-top: -50px;  
+}
+.bottom-background {
+	background-color: rgb(100,109,180, .5);
+	position: absolute;
+	width: 960px;
+	height: 200px;
+	-webkit-transform: skewY(-1.5deg);
+	    -ms-transform: skewY(-1.5deg);
+	        transform: skewY(-1.5deg);
+	margin-top: -80px;  
+}
+.left-background {
+	width: 200px;
+	height: 100%;
+	float: left;
+	background-color: #646db4;
+	opacity: 0.5;
+}
+.black-square {
+	position: relative;
+	height: 30px;
+	background-color: black;
+	z-index: 1;
+}
+aside {
+	background-color: rgb(100,109,180, .5);
+	padding: 30px 0px 30px 40px;
+}
+section {
+	padding: 30px 40px 60px 30px;
+}
+
+/*
+  ========================================
+  Images
+  ========================================
+*/
+
+aside img {
+	float: right;
+	height: 200px;
+	width: 250px;
+	margin-top: 30px;
+	-o-object-fit:cover;
+	   object-fit:cover;
+}
+.first-image {
+	position: relative;
+	right: 25%;
+	height: 200px;
+	width:125px;
+	margin-bottom: 50px;
+	-webkit-box-shadow: 3px 8px 7px #242240;
+	        box-shadow: 3px 8px 7px #242240;
+}
+.main-image {
+	 width: 100%;
+}
+
+/*
+  ========================================
+  Grid, container
+  ========================================
+*/
+
+.container {
+	position: relative;
+	margin: 0 auto;
+    width: 960px;
+    background-color: #c0c4e1;
+    overflow: hidden;
+}
+
+.grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 2rem 3fr;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 2rem;
+}
+.grid-1-2 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1rem 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+
+.main-text {
+	margin-top: 40px;
+	margin-bottom: 50px;
+}
+p {
+	position: relative;
+	text-align: justify;
+	z-index: 1;
+}
+h1 {
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/*
+  ========================================
+  List
+  ========================================
+*/
+
+.romb-list {
+	list-style: none;  
+}
+.romb-list li {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.romb-list li:before {
+	content: "♦";  
+	position: absolute;
+	margin-right: 5px;
+	display: inline-block;
+    position: relative;
+}
