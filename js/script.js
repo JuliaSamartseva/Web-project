@@ -37,7 +37,7 @@ function openForm() {
 function closeForm() {
 	document.getElementById("form-popup").style.display="none";
 }
-// When the user clicks anywhere outside of the modal, close it
+
 window.onclick = function(event) {
 	var modal = document.getElementById('form-popup');
 	if (event.target == modal) {
