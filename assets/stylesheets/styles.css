@@ -449,6 +449,8 @@ a:hover {
 	border-radius: 3px;
 	height: 250px;
 	width: 200px;
+	-o-object-fit: cover;
+	   object-fit: cover;
 }
 .product-item figure img:hover {
 	transform: scale(1.15);
