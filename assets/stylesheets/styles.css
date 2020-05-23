@@ -372,6 +372,7 @@ a:hover {
 	background-color: #F2F8FD;
 	color:#293f50;
 	text-align: center;
+	border-radius: 4px;
 }
 .form-container h2 {
 	font-size:18px;
